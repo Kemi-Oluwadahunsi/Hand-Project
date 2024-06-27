@@ -4,7 +4,7 @@ import logo from "../../public/images/logo.png";
 import { useState } from "react";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-   const [activeLink, setActiveLink] = useState("");
+   const [activeLink, setActiveLink] = useState("Home");
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
