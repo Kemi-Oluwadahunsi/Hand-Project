@@ -8,7 +8,7 @@ import Team from "../ui/Team";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="">
       <Header />
       <Hero />
       <AboutUs />
