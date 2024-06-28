@@ -2,6 +2,7 @@
 import Image from "next/image";
 import logo from "../../public/images/logo.png";
 import { useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
    const [activeLink, setActiveLink] = useState("Home");
@@ -31,7 +32,14 @@ const Header = () => {
                     activeLink === link ? "text-[#C82090]" : ""
                   }`}
                 >
-                  {link}
+                  <ScrollLink
+                    to={link.replace(/\s+/g, "").toLowerCase()}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                  >
+                    {link}
+                  </ScrollLink>
                 </li>
               )
             )}
@@ -93,7 +101,15 @@ const Header = () => {
                         activeLink === link ? "text-[#C82090]" : ""
                       }`}
                     >
-                      {link}
+                      <ScrollLink
+                        to={link.replace(/\s+/g, "").toLowerCase()}
+                        smooth={true}
+                        duration={500}
+                        offset={-70}
+                        onClick={toggleMenu}
+                      >
+                        {link}
+                      </ScrollLink>
                     </li>
                   )
                 )}

@@ -8,7 +8,7 @@ import up5 from "../../public/images/up5.png";
 import up6 from "../../public/images/up6.png";
 const Hero = () => {
   return (
-    <div className="bg-[#FDCA09] h-[25rem] lg:h-[90dvh] relative overflow-hidden flex items-center justify-center">
+    <div id="home" className="bg-[#FDCA09] h-[25rem] lg:h-[90dvh] relative overflow-hidden flex items-center justify-center">
       <div>
         <Image
           src={bgShape}
