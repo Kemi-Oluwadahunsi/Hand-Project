@@ -12,7 +12,7 @@ const Form = () => {
     router.push("/successPage");
   };
   return (
-    <div id="contactus" className="flex justify-between px-8 lg:px-[4rem] xl:px-[5rem] py-[3rem] lg:py-[10rem]">
+    <div id="contactus" className="flex justify-between px-8 sm:px-[6rem] lg:px-[4rem] xl:px-[5rem] py-[3rem] lg:py-[10rem]">
       <div className="hidden lg:block">
         <Image src={sideImage} alt="sideImage" title="side Image" />
       </div>

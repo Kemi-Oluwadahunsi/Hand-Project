@@ -8,7 +8,7 @@ import logo from "../../public/images/logo.png";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[#F5F5F5] px-8 lg:px-[5rem] xl:px-[10rem] pt-[3rem] lg:pt-[5rem] pb-8 flex flex-col gap-[3rem]">
+      <footer className="bg-[#F5F5F5] px-8 lg:px-[5rem] xl:px-[10rem] pt-[3rem] lg:pt-[5rem] pb-8 flex flex-col gap-8 lg:gap-[3rem]">
         <div className="flex flex-col gap-8 lg:gap-0 lg:flex-row justify-between">
           <div className="flex flex-col gap-4 lg:gap-8">
             <Image src={logo} alt="logo" title="logo" />

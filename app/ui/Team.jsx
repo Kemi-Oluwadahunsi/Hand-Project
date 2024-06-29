@@ -10,7 +10,7 @@ const Team = () => {
         Meet the heroes behind the magic
       </h2>
 
-      <div className="flex flex-col lg:flex-row justify-between gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-8">
         <div className="flex flex-col gap-8 p-4 shadow-[0px_0px_10px_rgba(0,0,0,0.2)] pb-8">
           <Image src={one} alt="founderImage" title="Founder Image" />
           <div>
