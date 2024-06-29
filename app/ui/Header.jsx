@@ -13,6 +13,9 @@ const Header = () => {
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
+    if (menuOpen) {
+      toggleMenu();
+    }
   };
   return (
     <>
