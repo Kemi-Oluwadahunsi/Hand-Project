@@ -16,7 +16,9 @@
   }
 }
 
-
+.activeColor {
+  color: #C82090;
+}
 
 
 @layer utilities {

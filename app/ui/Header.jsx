@@ -11,6 +11,10 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
+   const handleSetActive = (link) => {
+     setActiveLink(link);
+   };
+
   const handleLinkClick = (link) => {
     setActiveLink(link);
     if (menuOpen) {
@@ -19,27 +23,29 @@ const Header = () => {
   };
   return (
     <>
-      <header className="">
+      <header className="lg:fixed z-[10000] shadow-lg bg-white w-full">
         <nav className="flex justify-between items-center px-4 lg:px-[3rem] xl:px-[5rem] py-4 w-full">
           <div>
             <Image src={logo} alt="logo" title="logo" />
           </div>
 
-          <ul className="lg:flex justify-between lg:basis-[40%] xl:basis-[30%] font-bold text-[#5A6675] hidden">
+          <ul className="lg:flex justify-between lg:basis-[40%] xl:basis-[30%] font-bold hidden">
             {["Home", "About Us", "Services", "Blog", "Contact Us"].map(
               (link) => (
                 <li
                   key={link}
-                  onClick={() => handleLinkClick(link)}
                   className={`cursor-pointer ${
-                    activeLink === link ? "text-[#C82090]" : ""
+                    activeLink === link ? "text-[#C82090]" : "text-[#5A6675]"
                   }`}
                 >
                   <ScrollLink
                     to={link.replace(/\s+/g, "").toLowerCase()}
                     smooth={true}
                     duration={500}
-                    offset={-70}
+                    offset={-100}
+                    activeClass="activeColor"
+                    onSetActive={() => handleSetActive(link)}
+                    onClick={() => handleLinkClick(link)}
                   >
                     {link}
                   </ScrollLink>
@@ -93,13 +99,12 @@ const Header = () => {
           </div>
 
           {menuOpen && (
-            <div className="lg:hidden absolute h-[90dvh] pt-[4rem] pb-8 bg-[#FDCA09] top-[10%] left-0 flex flex-col gap-4 justify-between items-center z-[10000] w-full">
+            <div className="lg:hidden absolute h-screen pt-[4rem] pb-8 bg-[#FDCA09] top-[10%] left-0 flex flex-col gap-4 items-center z-[9999] w-full">
               <ul className="flex flex-col gap-8 justify-between font-bold text-lg ">
                 {["Home", "About Us", "Services", "Blog", "Contact Us"].map(
                   (link) => (
                     <li
                       key={link}
-                      onClick={() => handleLinkClick(link)}
                       className={`cursor-pointer ${
                         activeLink === link ? "text-[#C82090]" : ""
                       }`}
@@ -108,8 +113,10 @@ const Header = () => {
                         to={link.replace(/\s+/g, "").toLowerCase()}
                         smooth={true}
                         duration={500}
-                        offset={-70}
-                        onClick={toggleMenu}
+                        offset={0}
+                        activeClass="activeColor"
+                        onSetActive={() => handleSetActive(link)}
+                        onClick={() => handleLinkClick(link)}
                       >
                         {link}
                       </ScrollLink>
