@@ -21,7 +21,7 @@ const Hero = () => {
         />
       </div>
 
-      <h1 className="flex items-center justify-center font-bold text-[2.5rem] lg:text-[4rem] xl:text-[6rem] absolute top-[10%] lg:top-[12%] xl:top-[15%] lg:left-[12%] xl:left-[15%] sm:w-[70%] xl:w-[70%] leading[1.2] lg:leading-[1.1] text-center">
+      <h1 className="flex items-center justify-center font-bold text-[2.5rem] lg:text-[4rem] xl:text-[6rem] absolute top-[10%] lg:top-[12%] xl:top-[15%] lg:left-[15%] sm:w-[70%] xl:w-[70%] leading[1.2] lg:leading-[1.1] text-center">
         Let’s create something great together.
       </h1>
 
