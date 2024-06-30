@@ -17,11 +17,11 @@ const Hero = () => {
           src={bgShape}
           alt="bg-shape"
           title="bgImage"
-          className="absolute px-8 lg:-top-[2rem] xl:-top-[4rem]"
+          className="absolute px-8 sm:-top-[4rem] lg:-top-[2rem] xl:-top-[4rem]"
         />
       </div>
 
-      <h1 className="flex items-center justify-center font-bold text-[2.5rem] lg:text-[4rem] xl:text-[6rem] absolute top-[10%] lg:top-[12%] xl:top-[15%] lg:left-[12%] xl:left-[15%] sm:w-[80%] xl:w-[70%] leading[1.2] lg:leading-[1.1] text-center">
+      <h1 className="flex items-center justify-center font-bold text-[2.5rem] lg:text-[4rem] xl:text-[6rem] absolute top-[10%] lg:top-[12%] xl:top-[15%] lg:left-[12%] xl:left-[15%] sm:w-[70%] xl:w-[70%] leading[1.2] lg:leading-[1.1] text-center">
         Let’s create something great together.
       </h1>
 
@@ -31,7 +31,7 @@ const Hero = () => {
             src={up1}
             alt="hand"
             title="hands up"
-            className="sm:w-auto w-[70%] mx-auto"
+            className="md:w-auto sm:w-[90%] w-[70%] mx-auto"
           />
         </div>
         <div>
@@ -39,7 +39,7 @@ const Hero = () => {
             src={up2}
             alt="hand"
             title="hands up"
-            className="sm:w-auto w-[70%] mx-auto"
+            className="md:w-auto sm:w-[90%] w-[70%] mx-auto"
           />
         </div>
         <div>
@@ -47,7 +47,7 @@ const Hero = () => {
             src={up3}
             alt="hand"
             title="hands up"
-            className="sm:w-auto w-[70%]  mx-auto"
+            className="md:w-auto sm:w-[90%] w-[70%]  mx-auto"
           />
         </div>
         <div>
@@ -55,7 +55,7 @@ const Hero = () => {
             src={up4}
             alt="hand"
             title="hands up"
-            className="hidden sm:flex w-[70%] sm:w-auto mx-auto"
+            className="hidden sm:flex w-[70%] md:w-auto sm:w-[90%] mx-auto"
           />
         </div>
         <div>
@@ -63,7 +63,7 @@ const Hero = () => {
             src={up5}
             alt="hand"
             title="hands up"
-            className="hidden md:flex mx-auto"
+            className="hidden sm:flex w-[70%] md:w-auto sm:w-[90%] mx-auto"
           />
         </div>
         <div>
