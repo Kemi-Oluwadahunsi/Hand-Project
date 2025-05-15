@@ -42,7 +42,7 @@ const Header = () => {
                     to={link.replace(/\s+/g, "").toLowerCase()}
                     smooth={true}
                     duration={500}
-                    offset={-100}
+                    offset={0}
                     activeClass="activeColor"
                     onSetActive={() => handleSetActive(link)}
                     onClick={() => handleLinkClick(link)}
